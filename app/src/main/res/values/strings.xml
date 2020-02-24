@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Счётчики</string>
+
+<!--    Появляется после нажатия кнопки "Расчитать" внизу экрана.
+        после текста идёт число (сумма денег).-->
+    <string name="hot_water">Горячая вода:</string>
+    <string name="cold_water">Холодная вода:</string>
+    <string name="water">Вода:</string>
+    <string name="electricity">Электричество:</string>
+    <string name="summ">Итого:</string>
+<!--    Валюта, российские рубли, это конец предложения.-->
+    <string name="rub">руб.</string>
+
+<!--    Пункт меню на основном экране, отвечающий за перемещение
+        чисел с правых EditText в левые.-->
+    <string name="refresh">Обновить</string>
+
+    <!--    Текст на кнопке на главном экране, которая отвечает за расчёт счётчиков
+            и вывод текста.-->
+    <string name="calculate">Расчитать</string>
+
+<!--    Сообщение об ошибке в нижней части экрана-->
+    <string name="error">Ошибка!</string>
+</resources>
