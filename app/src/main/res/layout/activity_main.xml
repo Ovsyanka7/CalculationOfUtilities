@@ -150,11 +150,11 @@
         android:autofillHints="" />
 
     <TextView
-        android:id="@+id/textViewOldHotWater3"
+        android:id="@+id/textViewNewColdWater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="@string/new_hot"
+        android:text="@string/new_cold"
         app:layout_constraintBottom_toTopOf="@+id/editTextNewColdWater"
         app:layout_constraintStart_toStartOf="@+id/editTextNewColdWater" />
 
