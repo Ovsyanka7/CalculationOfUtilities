@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     EditText newHotWater;
     EditText newColdWater;
     EditText newElectricity;
-    //  Эти нужно сделать константами.
+
     float costHotWater;
     float costColdWater;
     float costElectricity;
@@ -37,12 +37,12 @@ public class MainActivity extends AppCompatActivity {
     float ColdWater;
     float Electricity;
     float Water;
-    float Summ;
+    float Sum;
     private SharedPreferences mSettings;
-    private static final String APP_PREFERENCES = "mysettings";
+    private static final String APP_PREFERENCES = "mySettings";
     private static final String OLD_HOT_WATER = "OldHotWater";
     private static final String OLD_COLD_WATER = "OldColdWater";
-    private static final String OLD_ELECTRICITY = "oldElectricyty";
+    private static final String OLD_ELECTRICITY = "oldElectricity";
     private static final String NEW_HOT_WATER = "NewHotWater";
     private static final String NEW_COLD_WATER = "NewColdWater";
     private static final String NEW_ELECTRICITY = "NewElectricity";
@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
         newColdWater = findViewById(R.id.editTextNewColdWater);
         newElectricity = findViewById(R.id.editTextNewElectricity);
 
+        // Стоимость комунальных услуг.
         costHotWater = 129.3f;
         costColdWater = 31.21f;
         costElectricity = 2.02f;
@@ -179,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
             ColdWater = ((NewColdWater - OldColdWater) * costColdWater);
             Electricity = ((NewElectricity - OldElectricity) * costElectricity);
             Water = ((NewHotWater + NewColdWater - OldHotWater - OldColdWater) * costWater);
-            Summ = Water + HotWater + ColdWater + Electricity;
+            Sum = Water + HotWater + ColdWater + Electricity;
 
             // Вывод данных.
             text.setText("" +
@@ -187,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                     "\n " + getString(R.string.cold_water) +" "+ Math.round(ColdWater) +" "+ getString(R.string.rub) +
                     "\n " + getString(R.string.water) +" "+ Math.round(Water) +" "+ getString(R.string.rub) +
                     "\n " + getString(R.string.electricity) +" "+ Math.round(Electricity) +" "+ getString(R.string.rub) +
-                    "\n " + getString(R.string.summ) +" "+ Math.round(Summ) +" "+ getString(R.string.rub));
+                    "\n " + getString(R.string.sum) +" "+ Math.round(Sum) +" "+ getString(R.string.rub));
         } catch (Exception e)
         {
             text.setText(R.string.error);

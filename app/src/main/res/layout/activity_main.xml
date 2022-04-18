@@ -32,7 +32,9 @@
         app:layout_constraintEnd_toStartOf="@+id/editTextNewHotWater"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editTextNewColdWater"
@@ -42,16 +44,17 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:ems="10"
-        android:hint="(Введите)"
+        android:hint="@string/editText_hint"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNewHotWater" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewHotWater"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewOldElectricity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Старая элект."
+        android:text="@string/old_electricity"
         app:layout_constraintBottom_toTopOf="@+id/editTextOldElectricity"
         app:layout_constraintStart_toStartOf="@+id/editTextOldElectricity" />
 
@@ -67,13 +70,14 @@
         app:layout_constraintEnd_toStartOf="@+id/editTextNewColdWater"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextOldHotWater" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextOldHotWater"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewOldHotWater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Старая горячая"
+        android:text="@string/old_hot"
         app:layout_constraintBottom_toTopOf="@+id/editTextOldHotWater"
         app:layout_constraintStart_toStartOf="@+id/editTextOldHotWater" />
 
@@ -89,14 +93,15 @@
         app:layout_constraintEnd_toStartOf="@+id/editTextNewElectricity"
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextOldColdWater" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextOldColdWater"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewOldColdWater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Старая холодная"
+        android:text="@string/old_cold"
         app:layout_constraintBottom_toTopOf="@+id/editTextOldColdWater"
         app:layout_constraintStart_toStartOf="@+id/editTextOldColdWater" />
 
@@ -104,7 +109,7 @@
         android:id="@+id/textViewNewHotWater"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Новая горячая"
+        android:text="@string/new_hot"
         app:layout_constraintBottom_toTopOf="@+id/editTextNewHotWater"
         app:layout_constraintStart_toStartOf="@+id/editTextNewHotWater" />
 
@@ -116,16 +121,17 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:ems="10"
-        android:hint="(Введите)"
+        android:hint="@string/editText_hint"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNewColdWater" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewColdWater"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewNewElectricity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Новая элект."
+        android:text="@string/new_electricity"
         app:layout_constraintBottom_toTopOf="@+id/editTextNewElectricity"
         app:layout_constraintStart_toStartOf="@+id/editTextNewElectricity" />
 
@@ -137,17 +143,18 @@
         android:layout_marginEnd="36dp"
         android:layout_marginRight="36dp"
         android:ems="10"
-        android:hint="(Введите)"
+        android:hint="@string/editText_hint"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewOldHotWater3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
-        android:text="Новая холодная"
+        android:text="@string/new_hot"
         app:layout_constraintBottom_toTopOf="@+id/editTextNewColdWater"
         app:layout_constraintStart_toStartOf="@+id/editTextNewColdWater" />
 
